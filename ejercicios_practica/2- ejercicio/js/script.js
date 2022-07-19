@@ -26,6 +26,12 @@ const estiloClase_agua = "agua"
 
 // Alumno: Genere un objeto llamado "tipoAgua" con todos los datos del pokemon tipo agua
 
+let tipoAgua = {
+    "titulo": titulo_agua,
+    "descripcion": descripcion_agua,
+    "icono": icono_agua,
+    "estiloClase": estiloClase_agua
+}
 
 // Tipo planta
 const titulo_planta = "Tipo Planta"
@@ -35,6 +41,13 @@ const estiloClase_planta = "planta"
 
 // Alumno: Genere un objeto llamado "tipoPlanta" con todos los datos del pokemon tipo planta
 
+let tipoPlanta = {
+    "titulo": titulo_planta,
+    "descripcion": descripcion_planta,
+    "icono": icono_planta,
+    "estiloClase": estiloClase_planta
+}
+
 // Tipo Electricidad
 const titulo_electrico = "Tipo Electricidad"
 const descripcion_electrico = "Los Pokémon de tipo eléctrico tienen hábitats variados, desde bosques y praderas, hasta ciudades y centrales eléctricas. Los Pokémon de tipo dragón, eléctrico y planta son resistentes al tipo eléctrico, y aún más los de tipo tierra, quienes son inmunes a los ataques eléctricos. Por consiguiente, los Pokémon eléctricos deben de ser muy precavidos con los ataques de tipo tierra, el cual representa su única debilidad."
@@ -42,6 +55,13 @@ const icono_electrico = "./images/electric_type.png";
 const estiloClase_electrico = "electricidad"
 
 // Alumno: Genere un objeto llamado "tipoElectricidad" con todos los datos del pokemon tipo electricidad
+
+let tipoElectricidad = {
+    "titulo": titulo_electrico,
+    "descripcion": descripcion_electrico,
+    "icono": icono_electrico,
+    "estiloClase": estiloClase_electrico
+}
 
 // Tipo normal
 const titulo_normal = "Tipo Normal"
@@ -51,13 +71,24 @@ const estiloClase_normal = "normal"
 
 // Alumno: Genere un objeto llamado "tipoNormal" con todos los datos del pokemon tipo normal
 
+let tipoNormal = {
+    "titulo": titulo_normal,
+    "descripcion": descripcion_normal,
+    "icono": icono_normal,
+    "estiloClase": estiloClase_normal
+}
+
 // Tipo fuego
 const titulo_fuego = "Tipo Fuego"
 const descripcion_fuego = "Los Pokémon de tipo tipo fuego basan sus ataques, principalmente, en el control de este elemento; y la mayoría pueden quemar al Pokémon oponente, mientras que ellos no sufren quemaduras. Son apasionados y, algunos, de mal carácter (como el Charizard de Ash); viven en cuevas o zonas rocosas y muy áridas; y, más probable, aun cerca de volcanes activos. Sin embargo, los únicos Pokémon que aparentemente suelen andar por lugares verdes como las praderas, son Ponyta y Rapidash, pudiendo ser que estos lugares les permiten galopar sin obstáculos. También, algunos son más dóciles, como Growlithe, Vulpix y sus respectivas evoluciones."
 const icono_fuego = "./images/fire_type.png";
 const estiloClase_fuego = "normal"
 
-
 // Alumno: Genere un objeto llamado "tipoFuego" con todos los datos del pokemon tipo fuego
 
-
+let tipoFuego = {
+    "titulo": titulo_fuego,
+    "descripcion": descripcion_fuego,
+    "icono": icono_fuego,
+    "estiloClase": estiloClase_fue
+}
