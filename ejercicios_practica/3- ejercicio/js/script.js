@@ -33,7 +33,7 @@ const estiloClase_normal = "normal"
 const titulo_fuego = "Tipo Fuego"
 const descripcion_fuego = "Los Pokémon de tipo tipo fuego basan sus ataques, principalmente, en el control de este elemento; y la mayoría pueden quemar al Pokémon oponente, mientras que ellos no sufren quemaduras. Son apasionados y, algunos, de mal carácter (como el Charizard de Ash); viven en cuevas o zonas rocosas y muy áridas; y, más probable, aun cerca de volcanes activos. Sin embargo, los únicos Pokémon que aparentemente suelen andar por lugares verdes como las praderas, son Ponyta y Rapidash, pudiendo ser que estos lugares les permiten galopar sin obstáculos. También, algunos son más dóciles, como Growlithe, Vulpix y sus respectivas evoluciones."
 const icono_fuego = "./images/fire_type.png";
-const estiloClase_fuego = "normal";
+const estiloClase_fuego = "fuego";
 
 
 let tipoAgua = {
@@ -70,10 +70,9 @@ let arr = [tipoAgua,tipoPlanta,tipoElectricidad,tipoNormal,tipoFuego];
 console.log(arr)
 
 let sect = document.getElementsByTagName("section")[0];
-console.log(sect)
+let acum = '';
 for (const item of arr) {
-    console.log(item);
-    sect.innerHTML = `
+    acum += `
     <article class="${item.estiloClase}">
     <div class="header">
         ${item.titulo}
@@ -91,4 +90,5 @@ for (const item of arr) {
     </article>
     `;
 }
+sect.innerHTML = acum;
 // Template para que utilice:
