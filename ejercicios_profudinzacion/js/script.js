@@ -42,3 +42,31 @@ en "section".
 */
 
 /* Comienza a escribir su código aquí */
+
+let section = document.getElementsByTagName("section")[0];
+let html = '';
+for (const pokemon of data) {
+  html += `
+  <article>
+  <img
+    src="${pokemon.thumbnail}"
+    class="icon-type"
+    alt="icon type"
+  />
+  <p>
+    Pokemon ${pokemon.name}
+  </p>
+  </article>
+`
+}
+section.innerHTML = html;
+
+for (let i = 0; i < section.children.length; i++) {
+  section.children[i].addEventListener("mouseover",()=>{
+    section.children[i].classList.add("planta");
+  });
+  section.children[i].addEventListener("mouseout",()=>{
+    section.children[i].classList.remove("planta");
+  })
+}
+console.log(section.children)
